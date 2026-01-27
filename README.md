@@ -1,6 +1,6 @@
 # Meth
 
-![Mega cool image](https://wallpapercat.com/w/full/e/9/9/795544-3840x2160-desktop-4k-fractal-background-photo.jpg)
+![Mega cool image](https://imagine-public.x.ai/imagine-public/images/6b9dfb7b-366b-4141-b9a9-6bb5339653f4.jpg)
 
 This is not mathematics.  
 This is what mathematics becomes after staring into the wall for 4 consecutive minutes without cracking on reels.
