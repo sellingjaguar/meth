@@ -1,6 +1,6 @@
 # Meth
 
-<img src="https://wallpapercat.com/w/full/e/9/9/795544-3840x2160-desktop-4k-fractal-background-photo.jpg" alt="Infinite fractal abyss staring back" width="400"/>
+![Mega cool image](https://wallpapercat.com/w/full/e/9/9/795544-3840x2160-desktop-4k-fractal-background-photo.jpg)
 
 This is not mathematics.  
 This is what mathematics becomes after staring into the wall for 4 consecutive minutes without cracking on reels.
