@@ -1,3 +1,4 @@
+# pylint: disable=missing-function-docstring
 """
 No docstring provided, refuse to add one.
 """
@@ -63,7 +64,12 @@ def trunc(x):
 # Floating point manipulation functions
 
 def copysign(x, y):
-    pass
+
+    sign = '+'
+    if str(y)[0] == "-":
+        sign = '-'
+
+    return float(sign + str(x))
 
 def frexp(x):
     pass
@@ -72,18 +78,18 @@ def isclose(a, b, *, rel_tol=0.00000003, abs_tol=0.0):
     pass
 
 def isfinite(x):
-    pass
+    return x != INF and x != NAN
 
 def isinf(x):
-    pass
+    return x == INF
 
 def isnan(x):
-    pass
+    return x == NAN
 
 def ldexp(x, i):
     pass
 
-def nextafter(x, y):
+def nextafter(x, y, steps=1):
     pass
 
 def ulp(x):
