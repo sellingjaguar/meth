@@ -110,19 +110,24 @@ def expm1(x):
     pass
 
 def log(x, base=E):
-    pass
+    if x < base:
+        return 0
+    return 1 + log(x/base, base)
 
 def log1p(x):
-    pass
+    return log(1 + x)
 
 def log2(x):
-    pass
+    return log(x, 2)
 
 def log10(x):
-    pass
+    return log(x, 10)
 
 def pow(x, y):
-    pass
+    n = x
+    for _ in range(y - 1):
+        n *= x
+    return n
 
 def sqrt(x):
     pass
