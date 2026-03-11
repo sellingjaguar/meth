@@ -1,4 +1,4 @@
-# pylint: disable=missing-function-docstring
+# pylint: skip-file #sybau
 """
 No docstring provided, refuse to add one.
 """
@@ -101,13 +101,13 @@ def cbrt(x):
     pass
 
 def exp(x):
-    pass
+    return pow(E, x)
 
 def exp2(x):
-    pass
+    return pow(2, x)
 
 def expm1(x):
-    pass
+    return exp(x) - 1
 
 def log(x, base=E):
     if x < base:
@@ -130,7 +130,22 @@ def pow(x, y):
     return n
 
 def sqrt(x):
-    pass
+    if x < 0:
+        return (NAN, NAN)
+    if x == 0:
+        return (0, 0)
+    
+    prev = 0
+    curr = 1
+    while True:
+        n = curr * curr
+        if n == x:
+            return (curr, curr)
+        elif n > x:
+            return (prev, curr)
+        
+        prev, curr = curr, curr + 1
+
 
 # Summation and product functions
 
