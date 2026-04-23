@@ -103,7 +103,21 @@ def ulp(x):
 # Power, exponential and logarithmic functions
 
 def cbrt(x):
-    pass
+    if x < 0:
+        return (NAN, NAN)
+    if x == 0:
+        return (0, 0)
+    
+    prev = 0
+    curr = 1
+    while True:
+        n = curr * curr * curr
+        if n == x:
+            return (curr, curr)
+        elif n > x:
+            return (prev, curr)
+        
+        prev, curr = curr, curr + 1
 
 def exp(x):
     return pow(E, x)
