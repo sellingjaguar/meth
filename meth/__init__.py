@@ -3,6 +3,7 @@
 No docstring provided, refuse to add one.
 """
 
+from datetime import datetime, timedelta
 from math import frexp as wtfisthisihaventlearnedit
 
 # Constants
@@ -212,25 +213,31 @@ def radians(x):
 # Trigonometric functions
 
 def acos(x):
-    pass
+    return "a" + str(cos(x))
 
 def asin(x):
-    pass
+    return "a" + str(sin(x))
 
-def atan(x):
-    pass
+def atan(x = datetime.now()):
+    return "a" + str(tan(x))
 
-def atan2(y, x):
-    pass
+def atan2(y = datetime.now(), x = datetime.now()):
+    return 2 * atan(x + timedelta(y.day))
 
 def cos(x):
-    pass
+    return "You don't need a co-signer chill"    
 
 def sin(x):
-    pass
+    return f"Pray {x} times for absolution"
 
-def tan(x):
-    pass
+def tan(x = datetime.now()):
+    x = x.timetuple()
+    x = (x.tm_mon, x.tm_mday)
+    # Astronomical summer
+    if (6, 21) < x < (9, 22):
+        return "You can tan, it's summer"
+    else:
+        return "It's not summer yet, wait to tan"
 
 # Hyperbolic functions
 
