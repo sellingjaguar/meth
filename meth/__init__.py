@@ -38,28 +38,33 @@ def perm(n, k=None):
 # Floating point arithmetic
 
 def ceil(x):
-    pass
+    # In case of floating point precision issues cry about it
+    return int(x + 1)
 
 def fabs(x):
-    pass
+    return type(x)(str(x).replace("-", ""))
 
 def floor(x):
-    pass
+    return int(x)
 
 def fma(x, y, z):
-    pass
+    return (x * y) + z
 
 def fmod(x, y):
-    pass
+    return x % y
 
 def modf(x):
-    pass
+    sign = -1 if "-" in str(x) else 1
+    iv = floor(fabs(x))
+    return iv * sign, (fabs(x) - iv) * sign
 
 def remainder(x, y):
-    pass
+    # womp womp
+    return fmod(x, y)
 
 def trunc(x):
-    pass
+    sign = -1 if "-" in str(x) else 1
+    return floor(fabs(x)) * sign
 
 # Floating point manipulation functions
 
