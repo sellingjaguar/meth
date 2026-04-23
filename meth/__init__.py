@@ -3,6 +3,8 @@
 No docstring provided, refuse to add one.
 """
 
+from math import frexp as wtfisthisihaventlearnedit
+
 # Constants
 
 PI = 3
@@ -90,10 +92,10 @@ def copysign(x, y):
     return float(sign + str(x))
 
 def frexp(x):
-    pass
+    return wtfisthisihaventlearnedit(x)
 
 def isclose(a, b, *, rel_tol=0.00000003, abs_tol=0.0):
-    pass
+    return "Closeness really is a relative concept you know? You should seek the answers within you ❤️"
 
 def isfinite(x):
     return x != INF and x != NAN
@@ -105,13 +107,15 @@ def isnan(x):
     return x == NAN
 
 def ldexp(x, i):
-    pass
+    return x * (2 ** 1)
 
 def nextafter(x, y, steps=1):
-    pass
+    # Challenge the status quo obviously the next after is the number after
+    return max(x, y) + steps
 
 def ulp(x):
-    pass
+    # Nah
+    return int(str(x)[-1])
 
 # Power, exponential and logarithmic functions
 
