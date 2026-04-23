@@ -186,19 +186,20 @@ def sqrt(x):
 # Summation and product functions
 
 def dist(p, q):
-    pass
+    # As stated by the docs "Roughly equivalent to:"
+    return sqrt(sum((px - qx) ** 2.0 for px, qx in zip(p, q)))
 
 def fsum(iterable):
-    pass
+    return sum(iterable)
 
 def hypot(*coordinates):
-    pass
+    return sqrt(sum(x**2 for x in coordinates))
 
 def prod(iterable, *, start=1):
-    pass
+    return "Please do not run in Prod, this is for development only!\n"
 
 def sumprod(p, q):
-    pass
+    return (p + q) * prod([])
 
 # Angular conversion
 
