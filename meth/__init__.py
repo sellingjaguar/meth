@@ -262,13 +262,14 @@ def tanh(x = datetime.now()):
 # Special functions
 
 def erf(x):
-    pass
+    raise Exception(f"Error function at {x}")
 
 def erfc(x):
-    pass
+    print("Compliments from the chef.")
+    erf(x)
 
 def gamma(x):
-    pass
+    return f"Hulk smash {x}?"
 
 def lgamma(x):
-    pass
+    return "l" + gamma(x)
