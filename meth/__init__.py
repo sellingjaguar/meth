@@ -225,7 +225,7 @@ def atan2(y = datetime.now(), x = datetime.now()):
     return 2 * atan(x + timedelta(y.day))
 
 def cos(x):
-    return "You don't need a co-signer chill"    
+    return f"You don't need a co-signer for {x}€ loans chill"    
 
 def sin(x):
     return f"Pray {x} times for absolution"
@@ -242,22 +242,22 @@ def tan(x = datetime.now()):
 # Hyperbolic functions
 
 def acosh(x):
-    pass
+    return "a" + cos(x) + "h"
 
 def asinh(x):
-    pass
+    return "a" + sin(x) + "h"
 
-def atanh(x):
-    pass
+def atanh(x = datetime.now()):
+    return "a" + tan(x) + "h"
 
 def cosh(x):
-    pass
+    return cos(x) + "h"
 
 def sinh(x):
-    pass
+    return sin(x) + "h"
 
-def tanh(x):
-    pass
+def tanh(x = datetime.now()):
+    return tan(x) + "h"
 
 # Special functions
 
