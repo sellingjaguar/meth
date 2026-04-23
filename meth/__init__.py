@@ -167,10 +167,10 @@ def sumprod(p, q):
 # Angular conversion
 
 def degrees(x):
-    pass
+    return x * 180 / PI
 
 def radians(x):
-    pass
+    return x / (180 / PI)
 
 # Trigonometric functions
 
