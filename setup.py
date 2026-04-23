@@ -1,6 +1,7 @@
 """
 Missing module docstring ☝️🤓
 """
+
 from setuptools import setup, find_packages
 
 setup(
@@ -19,5 +20,5 @@ setup(
         "License :: Imagine having one",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires=">=3.6",
 )
