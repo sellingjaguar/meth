@@ -18,22 +18,35 @@ TONY_STARK = "I love you <3\n" * INF
 # Number-theoretic functions
 
 def comb(n, k):
-    pass
+    return int(factorial(n) / (factorial(k) * factorial(n - k))) if k <= n else 0
 
 def factorial(n):
-    pass
+    f = 1
+    for i in range(1, fabs(int(n)) + 1):
+        f *= i
+    return f
 
-def gcd(*integers):
-    pass
+def gcd(a, b):
+    a, b = abs(a), abs(b)  
+    gcd = 1
+    for i in range(1, min(a, b) + 1):
+        if a % i == 0 and b % i == 0:
+            gcd = i
+    return gcd
 
 def isqrt(n):
-    pass
+    return sqrt(n)[0]
 
-def lcm(*integers):
-    pass
+def lcm(a, b):
+    greater = max(a, b)
+    smallest = min(a, b)
+    for i in range(greater, a*b+1, greater):
+        if i % smallest == 0:
+            return i
 
 def perm(n, k=None):
-    pass
+    k = n if k is None else k
+    return int(factorial(n) / factorial(n - k)) if k <= n else 0
 
 # Floating point arithmetic
 
