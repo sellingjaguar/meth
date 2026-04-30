@@ -1,5 +1,10 @@
 # Meth
 
+```bash
+# Install with
+pip install meth@git+https://github.com/sellingjaguar/meth
+```
+
 ![Mega cool image](https://imagine-public.x.ai/imagine-public/images/6b9dfb7b-366b-4141-b9a9-6bb5339653f4.jpg)
 
 This is not mathematics.  
