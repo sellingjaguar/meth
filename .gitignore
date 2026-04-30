@@ -3,4 +3,4 @@
 __pycache__/
 dist
 # You don't deserve tests
-testing.py 
+test/
