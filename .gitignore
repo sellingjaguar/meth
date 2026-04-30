@@ -1,5 +1,6 @@
 .venv
 *.egg-info
 __pycache__/
+dist
 # You don't deserve tests
 testing.py 

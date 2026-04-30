@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meth"
+version = "0.01"
+description = "The best meth package ever."
+readme = "README.md"
+requires-python = ">=3.6"
+authors = [
+    { name = "SellingJaguar", email = "imagine@having.one" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Imagine having one",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/sellingjaguar/meth"
+
+[project.scripts]
+meth = "meth.__main__:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
